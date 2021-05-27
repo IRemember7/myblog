@@ -1,0 +1,26 @@
+server:
+  port: 18084
+spring:
+  thymeleaf:
+    mode: HTML
+  messages:
+    basename: i18n/messages
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.108.195.250:3306/myblog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: Eating520..
+
+logging:
+  level:
+    root: info
+    com.star: debug
+
+mybatis:
+  type-aliases-package: com.star.entity
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+comment.avatar: /images/avatar.png
+message.avatar: /images/avatar.png
