@@ -11,34 +11,7 @@
 <body>
 
 <!--导航-->
-<nav class="gird-header">
-    <div class="ui container">
-        <div class="ui inverted secondary stackable menu">
-            <h2 class="ui olive header item" style="font-family: STSong">ONESTAR</h2>
-            <!--<div class="right m-item item m-mobile-hide">-->
-                <a href="#" th:href="@{/}" class="m-item item m-mobile-hide "><i class="home icon"></i>首页</a>
-                <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
-                <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
-                <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐盒</a>
-                <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
-                <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>友人帐</a>
-                <a href="#" th:href="@{/picture}" class="m-item item m-mobile-hide"><i class="image icon"></i>照片墙</a>
-                <a href="#" th:href="@{/about}" class="active m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
-            <!--</div>-->
-            <div class="right m-item item m-mobile-hide">
-                <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
-                    <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
-                        <input style="color: white" type="text" name="query" placeholder="Search...." th:value="${query}">
-                        <i onclick="document.forms['search'].submit()" class="search link icon"></i>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
-        <i class="sidebar icon"></i>
-    </a>
-</nav>
+<div th:insert="~{navigate :: nav}"></div>
 
 
 <!--顶部背景图片-->
@@ -47,7 +20,7 @@
     <div class="m-bg-class_cover">
         <div class="ui container" style="position: relative ;bottom: -540px;">
             <div class="m-font-size-title" align="center" style="font-family:'STXingkai'">关于我</div>
-            <div class="m-font-size-text-init-title m-margin-top" align="center">拖-就硬拖</div>
+            <div class="m-font-size-text-init-title m-margin-top" align="center">哥只是个传说～</div>
         </div>
     </div>
 </div>
@@ -70,16 +43,16 @@
     </div>
 
     <div class="ui tencent-qr flowing popup transition hidden">
-        <img src="../static/images/oneStar.jpg" th:src="@{/images/oneStar.jpg}" alt="" class="ui rounded image" style="width: 110px">
-        <div align="center">公众号</div>
+        <img src="../static/images/oneStar.jpg" th:src="@{/images/xiaomai1.jpg}" alt="" class="ui rounded image" style="width: 110px">
+        <div align="center">小埋</div>
     </div>
     <div class="ui wechat-qr flowing popup transition hidden">
-        <img src="../static/images/oneStarWechat.jpg" th:src="@{/images/oneStarWechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
-        <div align="center">微信</div>
+        <img src="../static/images/oneStarWechat.jpg" th:src="@{/images/xiaomai2.jpg}" alt="" class="ui rounded image" style="width: 110px">
+        <div align="center">小埋</div>
     </div>
     <div class="ui qq-qr flowing popup transition hidden">
-        <img src="../static/images/qq.jpg" th:src="@{/images/qq.jpg}" alt="" class="ui rounded image" style="width: 110px">
-        <div align="center">QQ</div>
+        <img src="../static/images/qq.jpg" th:src="@{/images/xiaomai3.jpg}" alt="" class="ui rounded image" style="width: 110px">
+        <div align="center">小埋</div>
     </div>
         <hr class="m-margin-top-small" style="width: 30%">
         <br>
@@ -98,23 +71,29 @@
         </div>
         <hr class="m-margin-top-large">
         <br>
-<!--        <h2 class="m-margin-tb-tiny" style="font-size: xx-large;font-weight: bold;color: #F08047;font-family: STSong">打赏本站</h2>-->
-<!--            <div class="ui orange basic label m-margin-tb-tiny">-->
-<!--            <p style="font-size: medium">每一次提笔的我们，就像街边的街头艺人，用笔唱着自己的歌谣。如果有一天你感动了，那么期待您请我们来一杯咖啡</p>-->
-<!--            </div>-->
-<!--            <div class="ui orange basic label">-->
-<!--                <div class="ui images" style="font-size: inherit !important;">-->
-<!--                    <div class="image">-->
-<!--                        <img src="../static/images/zhifupay.jpg" th:src="@{/images/zhifupay.jpg}" alt="" class="ui rounded bordered image" style="width: 180px">-->
-<!--                        <div>支付宝</div>-->
-<!--                    </div>-->
-<!--                    <div class="image">-->
-<!--                        <img src="../static/images/wechatpay.jpg" th:src="@{/images/wechatpay.jpg}" alt="" class="ui rounded bordered image" style="width: 180px">-->
-<!--                        <div>微信</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-    <!--<div class="hiddenDiv"></div>-->
+        <h2 class="m-margin-tb-tiny" style="font-size: xx-large;font-weight: bold;color: #F08047;font-family: STSong">吉祥物小埋</h2>
+            <div class="ui orange basic label m-margin-tb-tiny">
+            <p style="font-size: medium">天边彩虹何其绚烂，走过的季节何其珍贵</p>
+            </div>
+        <br/>
+        <br/>
+            <div class="ui orange basic label">
+                <div class="ui images" style="font-size: inherit !important;">
+                    <div class="image">
+                        <img src="../static/images/zhifupay.jpg" th:src="@{/images/xiaomai3.jpg}" alt="" class="ui rounded bordered image" style="width: 180px">
+                        <div>小埋</div>
+                    </div>
+                    <div class="image">
+                        <img src="../static/images/wechatpay.jpg" th:src="@{/images/xiaomai4.jpg}" alt="" class="ui rounded bordered image" style="width: 180px">
+                        <div>小埋</div>
+                    </div>
+                    <div class="image">
+                        <img src="../static/images/wechatpay.jpg" th:src="@{/images/xiaomai5.jpg}" alt="" class="ui rounded bordered image" style="width: 180px">
+                        <div>小埋</div>
+                    </div>
+                </div>
+            </div>
+    <div class="hiddenDiv"></div>
     </div>
 </div>
 
