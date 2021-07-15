@@ -53,7 +53,7 @@ public class IndexController {
         PageInfo<FirstPageBlog> pageInfo = new PageInfo<>(allFirstPageBlog);
         model.addAttribute("pageInfo",pageInfo);
         model.addAttribute("recommendedBlogs", recommendedBlog);
-
+        model.addAttribute("active","index");
         return "index";
     }
 

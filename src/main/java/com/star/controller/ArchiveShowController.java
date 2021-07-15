@@ -28,6 +28,7 @@ public class ArchiveShowController {
     public String archive(Model model){
         List<BlogQuery> blogs = blogService.getAllBlog();
         model.addAttribute("blogs", blogs);
+        model.addAttribute("active","archives");
         return "archives";
     }
 

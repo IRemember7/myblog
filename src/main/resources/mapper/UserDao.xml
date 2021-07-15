@@ -8,4 +8,11 @@
         where username = #{username} and password = #{password};
     </select>
 
+    <!--查询用户名和密码-->
+    <select id="findByUsername" resultType="com.star.entity.User">
+        select * from myblog.t_user
+        where username = #{username};
+    </select>
+
+
 </mapper>

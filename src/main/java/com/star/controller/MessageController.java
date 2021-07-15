@@ -33,7 +33,8 @@ public class MessageController {
     private String avatar;
 
     @GetMapping("/message")
-    public String message() {
+    public String message(Model model) {
+        model.addAttribute("active","message");
         return "message";
     }
 

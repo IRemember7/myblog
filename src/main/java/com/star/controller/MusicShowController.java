@@ -1,6 +1,7 @@
 package com.star.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
@@ -14,7 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MusicShowController {
 
     @GetMapping("/music")
-    public String about() {
+    public String music(Model model) {
+        model.addAttribute("active","music");
         return "music";
     }
 

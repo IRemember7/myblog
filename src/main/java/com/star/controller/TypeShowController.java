@@ -47,6 +47,7 @@ public class TypeShowController {
         PageInfo<FirstPageBlog> pageInfo = new PageInfo<>(blogs);
         model.addAttribute("pageInfo", pageInfo);
         model.addAttribute("activeTypeId", id);
+        model.addAttribute("active","types");
         return "types";
     }
 

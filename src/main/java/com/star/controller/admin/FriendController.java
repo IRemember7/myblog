@@ -36,6 +36,7 @@ public class FriendController {
         List<FriendLink> listFriendLink = friendLinkService.listFriendLink();
         PageInfo<FriendLink> pageInfo = new PageInfo<FriendLink>(listFriendLink);
         model.addAttribute("pageInfo",pageInfo);
+        model.addAttribute("active","friendlinks");
         return "admin/friendlinks";
     }
 

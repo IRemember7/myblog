@@ -21,6 +21,7 @@ public class PictureShowController {
 
     @GetMapping("/picture")
     public String friends(Model model) {
+        model.addAttribute("active","picture");
         model.addAttribute("pictures",pictureService.listPicture());
         return "picture";
     }

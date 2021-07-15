@@ -2,6 +2,14 @@ package com.star.controller.admin;
 
 import com.star.entity.User;
 import com.star.service.UserService;
+import com.star.util.MD5Utils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +30,7 @@ import javax.servlet.http.HttpSession;
 @Controller
 @RequestMapping("/admin")
 public class LoginController {
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private UserService userService;
@@ -53,15 +62,23 @@ public class LoginController {
                         @RequestParam String password,
                         HttpSession session,
                         RedirectAttributes attributes) {
-        User user = userService.checkUser(username, password);
-        if (user != null) {
-            user.setPassword(null);
-            session.setAttribute("user",user);
-            return "redirect:/adminMain";
-        } else {
+
+        Subject subject = SecurityUtils.getSubject();
+        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(username, MD5Utils.code(password));
+        try {
+            //进行验证，这里可以捕获异常，然后返回对应信息
+            subject.login(usernamePasswordToken);
+        } catch (UnknownAccountException e) {
+            logger.error("用户名不存在！", e);
+            attributes.addFlashAttribute("message", "用户名不存在");
+            return "redirect:/admin";
+        } catch (AuthenticationException e) {
             attributes.addFlashAttribute("message", "用户名和密码错误");
+            logger.error("账号或密码错误！", e);
             return "redirect:/admin";
         }
+        session.setAttribute("user", userService.getUserByName(username));
+        return "redirect:/adminMain";
     }
 
     /**
@@ -73,7 +90,9 @@ public class LoginController {
      */
     @GetMapping("/logout")
     public String logout(HttpSession session) {
+        Subject subject = SecurityUtils.getSubject();
         session.removeAttribute("user");
+        subject.logout();
         return "redirect:/admin";
     }
 

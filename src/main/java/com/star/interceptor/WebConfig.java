@@ -20,12 +20,12 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addViewController("/adminMain").setViewName("admin/index");
     }
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginInterceptor())
-                .addPathPatterns("/admin/**")
-                .excludePathPatterns("/admin")
-                .excludePathPatterns("/admin/login");
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(new LoginInterceptor())
+//                .addPathPatterns("/admin/**")
+//                .excludePathPatterns("/admin")
+//                .excludePathPatterns("/admin/login");
+//    }
 
 }

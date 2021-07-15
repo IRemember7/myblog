@@ -46,6 +46,7 @@ public class BlogController {
         PageInfo<BlogQuery> pageInfo = new PageInfo<BlogQuery>(list);
         model.addAttribute("types",typeService.getAllType());
         model.addAttribute("pageInfo",pageInfo);
+        model.addAttribute("active","blogs");
         return "admin/blogs";
     }
 
