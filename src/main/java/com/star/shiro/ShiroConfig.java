@@ -4,6 +4,7 @@ import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -80,6 +81,18 @@ public class ShiroConfig {
         map.put("/**", "anon");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(map);
         return shiroFilterFactoryBean;
+    }
+
+    @Bean(name = "sessionManager")
+    public DefaultWebSessionManager sessionManager() {
+        DefaultWebSessionManager securityManager = new DefaultWebSessionManager();
+        securityManager.setSessionIdUrlRewritingEnabled(false);
+//    deleteInvalidSessions
+        securityManager.setDeleteInvalidSessions(true);
+//    sessionValidationSchedulerEnabled
+        securityManager.setSessionValidationSchedulerEnabled(true);
+//    globalSessionTimeout
+        return securityManager;
     }
 
 

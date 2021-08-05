@@ -5,65 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="854206d9-797a-4ff1-83a1-11cf47e416a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_cache_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_core_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_config_ogdl_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_cipher_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_core_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_crypto_hash_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_event_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_lang_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_owasp_encoder_encoder_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/star/shiro/CustomRealm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/star/shiro/ShiroConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/blog.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/blog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-05-21.0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/blog.log.2021-05-28.0" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/AboutShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/AboutShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/ArchiveShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/ArchiveShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/FriendsShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/FriendsShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/MusicShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/MusicShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/PictureShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/PictureShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/TypeShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/TypeShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/BlogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/FriendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/FriendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/PictureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/PictureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/TypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/controller/admin/TypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/interceptor/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/interceptor/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/aboutbg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/aboutbg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/backimg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/backimg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/backimg1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/friendsbg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/friendsbg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/messagebg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/messagebg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/music.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/music.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/picturebg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/picturebg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/typebg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/typebg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/navigate.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/navigate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src5.28.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/star/shiro/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/star/shiro/ShiroConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/nantian/svn/usp_svn/USP3.0/源码/建行郑州地铁项目/usp-core" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -145,6 +89,8 @@
       <workItem from="1624869104864" duration="485000" />
       <workItem from="1626249216803" duration="6638000" />
       <workItem from="1626310519791" duration="19402000" />
+      <workItem from="1626399153705" duration="23000" />
+      <workItem from="1628131924305" duration="1217000" />
     </task>
     <servers />
   </component>
@@ -162,5 +108,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/star/controller/admin/LoginController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
