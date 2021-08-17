@@ -1,5 +1,7 @@
 server:
   port: 18084
+  servlet:
+    context-path: /myblog
 spring:
   thymeleaf:
     mode: HTML
@@ -24,3 +26,4 @@ mybatis:
 
 comment.avatar: /images/avatar.png
 message.avatar: /images/avatar.png
+
